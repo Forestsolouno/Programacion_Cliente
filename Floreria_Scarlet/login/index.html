@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Florería Scarlet Ingresar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+    <style>
+        @font-face {
+            font-family: MyHelvetica;
+            src: url(fonts/Tangerine_Bold.ttf);
+        }
+        
+        .navigation-wrapper {
+            position: relative;
+        }
+        
+        .navigation-button {
+            will-change: transform;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: fixed;
+            z-index: 1;
+            top: 8%;
+            right: 7%;
+            background: transparent;
+            cursor: pointer;
+        }
+        
+        .navigation-button .fa {
+            border: 6px solid black;
+            border-radius: 3px;
+            padding: 14px;
+            color: black;
+        }
+        
+        .navigation-menu ul li {
+            list-style: none;
+            font-family: impact;
+            font-weight: 300;
+            color: hsl(0, 0%, 70%);
+        }
+        
+        .navigation-menu {
+            content: '';
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 50%;
+            background: #fff;
+            height: 100%;
+            transform: skewX(0deg) translate(100%, 0);
+            transform-origin: top right;
+            transition: all .2s ease-in;
+            z-index: 15;
+        }
+        
+        .navigation-menu ul {
+            transform: skewX(-8deg);
+            transform-origin: top left;
+            position: fixed;
+            right: 10%;
+            top: 10%;
+            width: 85%;
+            text-align: right;
+        }
+        
+        .navigation-menu ul li {
+            position: relative;
+            z-index: 999;
+            font-size: 250%;
+            color: hsl(0, 0%, 10%);
+            line-height: 100%;
+        }
+        
+        .navigation-menu ul li a {
+            border: none;
+            color: hsl(0, 0%, 10%);
+            text-decoration: none;
+        }
+        
+        .navigation-menu.active {
+            transform: skewX(8deg) translate(0, 0);
+        }
+        
+        .navigation-menu li {
+            opacity: 0;
+            transform: translate(0, 10px);
+            transition: all .0s ease-in .3s;
+        }
+        
+        .navigation-menu.active li {
+            opacity: 1;
+            transform: translate(0, 0);
+            transition: all .2s ease-in 0s;
+        }
+        
+        .navigation-menu.active li:nth-child(1) {
+            transition-delay: .3s;
+        }
+        
+        .navigation-menu.active li:nth-child(2) {
+            transition-delay: .4s;
+        }
+        
+        .navigation-menu.active li:nth-child(3) {
+            transition-delay: .5s;
+        }
+        
+        .navigation-menu.active li:nth-child(4) {
+            transition-delay: .6s;
+        }
+        
+        .navigation-menu.active li:nth-child(5) {
+            transition-delay: .7s;
+        }
+        
+        .navigation-menu.active li:nth-child(6) {
+            transition-delay: .8s;
+        }
+        
+        .navigation-menu.active li:nth-child(7) {
+            transition-delay: .9s;
+        }
+        
+        .navigation-menu.active li:nth-child(8) {
+            transition-delay: 1.0s;
+        }
+        
+        .button {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: normal;
+            font-size: 12px;
+            margin-top: 3%px;
+        }
+        
+        #flor {
+            font-family: MyHelvetica;
+            font-size: 450%;
+            -webkit-text-stroke: 1px black;
+            color: red;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body style="background-color: #666666;">
+    <div class="navigation-wrapper">
+        <div class="navigation-button">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="navigation-menu">
+            <ul>
+                <li>
+                    <a href="/index.html">
+                        <p id="flor">Florería Scarlet</p>
+                    </a>
+                </li>
+                <li><a href="/index.html">Página Principal</a></li>
+                <li><a href="/login/index.html">Ingresar/Registrarse</a></li>
+                <li><a href="">Galería</a></li>
+                <li><a href="">Florpedia</a></li>
+                <li><a href="/contacto/index.html">Contacto</a></li>
+                <li><a href="">Ubicación</a></li>
+                <li><a href="">Sobre Nosotros</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <form class="login100-form validate-form">
+                    <span class="Scarlet">
+                        Florería Scarlet
+                    </span>
+                    <span class="login100-form-title p-b-43">
+						Ingresar/Login
+					</span>
+
+
+                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input class="input100" type="text" name="email">
+                        <span class="focus-input100"></span>
+                        <span class="label-input100">Nombre Usuario/Correo Electrónico</span>
+                    </div>
+
+
+                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+                        <input class="input100" type="password" name="pass">
+                        <span class="focus-input100"></span>
+                        <span class="label-input100">Contraseña</span>
+                    </div>
+
+                    <div class="flex-sb-m w-full p-t-3 p-b-32">
+                        <div class="contact100-form-checkbox">
+                            <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                            <label class="label-checkbox100" for="ckb1">
+								Recordarme
+							</label>
+                        </div>
+
+                        <div>
+                            <a href="#" class="txt1">
+								¿Olvidaste la contraseña?
+							</a>
+                        </div>
+                    </div>
+
+
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn">
+							Ingresar
+						</button>
+                    </div>
+
+                    <div class="text-center p-t-46 p-b-20">
+                        <span class="txt2">
+							O registrate usando
+						</span>
+                    </div>
+
+                    <div class="login100-form-social flex-c-m">
+                        <a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
+                            <i class="fa fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+
+                        <a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </form>
+
+                <div class="login100-more" style="background-image: url('images/Flor.jpg');">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var navButton = document.querySelector('.navigation-button');
+        var navMenu = document.querySelector('.navigation-menu');
+        var win = window;
+
+        function openMenu(event) {
+
+            navButton.classList.toggle('active');
+            navMenu.classList.toggle('active');
+
+            event.preventDefault();
+            event.stopImmediatePropagation();
+        }
+
+        function closeMenu(event) {
+            if (navButton.classList.contains('active')) {
+                navButton.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        }
+
+        navButton.addEventListener('click', openMenu, false);
+
+        win.addEventListener('click', closeMenu, false);
+    </script>
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
