@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <title>Unidad Académica de Economía</title>
+    <meta charset="utf-8">
+    <meta title="Formulario UAN">
+    <meta description="Este es un sitio que presenta un formulario para poder estar en contacto con los docentes de la Unidad Académica de Economía">
+    <meta keywords="UAN, Formulario, Formulario UAN, Octavo Semestre, Docentes">
+    <style>
+        body {
+            background-color: lightcyan;
+        }
+        
+        header {
+            text-align: center;
+        }
+        
+        ul li {
+            margin: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        a:hover {
+            background-color: lightblue;
+        }
+        
+        #logo {
+            width: 100%;
+            margin: auto;
+        }
+        
+        #abajo #tel {
+            width: 38px;
+        }
+        
+        #contenedor {
+            text-align: center;
+            margin: auto;
+            border-radius: 30px;
+            border: 2px solid black;
+            width: 35%;
+        }
+        
+        ul {
+            display: flex;
+            margin: 40px 24% 40px 24%;
+            border: 3px solid blue;
+            background-color: rgb(181, 71, 255);
+            justify-content: center;
+            list-style: none;
+            width: 50%;
+            padding: 0;
+        }
+        
+        #arriba {
+            width: 100%;
+            margin: auto;
+            background-color: lawngreen;
+            border-radius: 27px 27px 0px 0px;
+        }
+        
+        #arriba img {
+            margin-top: 4px;
+            border-radius: 50%;
+            width: 45%;
+            border: 3px solid black;
+        }
+        
+        #abajo {
+            border-top: 3px solid black;
+            padding-top: 8px;
+            padding-bottom: 10px;
+            width: 100%;
+            background-color: lightskyblue;
+            border-radius: 0px 0px 29px 29px;
+        }
+        
+        #abajo label {
+            font-size: 17px;
+        }
+        
+        #abajo input {
+            font-size: 75%;
+            text-align: center;
+        }
+        
+        textarea {
+            width: 50%;
+            height: 70px;
+            resize: none;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 3px;
+        }
+        
+        button {
+            margin: auto;
+            padding: 2%;
+            width: 20%;
+        }
+        
+         ::-webkit-input-placeholder {
+            color: rgb(150, 41, 150);
+        }
+        
+        input:valid,
+        textarea:valid {
+            background: rgb(124, 248, 124);
+        }
+        
+        input:invalid,
+        textarea:invalid {
+            background: rgb(247, 119, 119);
+        }
+        
+        input:required,
+        textarea:required,
+        select:required,
+        option:required {
+            border: 2px solid yellow;
+        }
+        
+        form input[type="email"]:required:valid {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="/imagen/Logo.png" alt="logo y nombre de la Universidad Autónoma de Nayarit">
+        </div>
+        <ul>
+            <a href="#">
+                <li>Pagina Principal</li>
+            </a>
+            <a href="#">
+                <li>Carreras</li>
+            </a>
+            <a href="#">
+                <li>Unidades Académicas</li>
+            </a>
+            <a href="#">
+                <li>Contacto</li>
+            </a>
+        </ul>
+    </header>
+    <h1> Contacto Unidad Académica de Economía</h1>
+    <div id="contenedor">
+        <div id="arriba">
+            <img src="/imagen/descarga.jpg" alt="Imagen del logo de la Unidad Académica de Economía">
+        </div>
+        <div id="abajo">
+            <form action="#" method="POST" id="form" name="formulario">
+                <label>Matrícula:</label><br>
+                <input type="text" id="matricula" name="matricula" pattern="[0-9]{8}" placeholder="Ej. 17002392" minlength="8" maxlength="8">
+                <br>
+                <label>Nombre:</label><br>
+                <input type="text" id="nombre" required name="nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+" placeholder="Ej. Alejandro Esparza" required>
+                <br>
+                <label id="correo">Correo Electrónico:</label><br>
+                <input type="email" id="correo" required name="correo" placeholder="Ej. chatito@hotmail.com" required>
+                <br>
+                <label>Grupo:</label><br>
+                <select required>
+                    <option value="1" selected>8vo de sistemas</option>
+                    <option disabled value="0">En mantenimiento</option>
+                </select>
+                <br>
+                <label for="municipio">Municipio:</label><br>
+                <select id="municipio" required name="municipio">
+                    <option value="">Selecciona municipio</option>
+                    <option value="311">Acaponeta</option>
+                    <option value="324">Ahuacatlan</option>
+                    <option value="324">Amatlán de Cañas</option>
+                    <option value="329">Bahía de Banderas</option>
+                    <option value="327">Compostela</option>
+                    <option value="319">El Nayar</option>
+                    <option value="325">Huajicori</option>
+                    <option value="324">Ixtlán del Río</option>
+                    <option value="324">Jala</option>
+                    <option value="437">La Yesca</option>
+                    <option value="319">Rosamorada</option>
+                    <option value="319">Ruíz</option>
+                    <option value="323">San Blas</option>
+                    <option value="327">San Pedro Lagunillas</option>
+                    <option value="327">Sta. Maria del Oro</option>
+                    <option value="323">Santiago Ixcuintla</option>
+                    <option value="389">Tecuala</option>
+                    <option value="311">Tepic</option>
+                    <option value="319">Tuxpan</option>
+                    <option value="311">Xalisco</option>
+                </select>
+                <br>
+                <label>Num. Teléfono:</label><br>
+                <input id="tel" required type="number" name="lada" readonly> <input type="text" id="efono" placeholder="Ej.1086547" name="telefono" required minlength="7" maxlength="7">
+                <br>
+                <label>Codigo Postal:</label><br>
+                <input type="text" name="codigo" placeholder="Ej. 63441" pattern="[0-9]{5}" minlength="5" maxlength="5">
+                <br>
+                <form id="unidades" name="materias">
+                    <label>Unidades de aprendizaje:</label>
+                    <br><input type="checkbox" name="Unidad 1" value="Minería de datos"><label>Minería de datos</label>
+                    <br><input type="checkbox" name="Unidad 2" value="Sistemas inteligentes"><label>Sistemas inteligentes</label>
+                    <br><input type="checkbox" name="Unidad 3" value="Administración de Proyectos de Software"><label>Administración de Proyectos de Software</label>
+                    <br><input type="checkbox" name="Unidad 4" value="Proyecto Profesionalizante Básico"><label>Proyecto Profesionalizante Básico</label>
+                    <br><input type="checkbox" name="Unidad 5" value="Software Libre"><label>Software Libre</label>
+                    <br><input type="checkbox" name="Unidad 6" value="Acceso y Desarrollo de Base de Datos Especiales"><label>Acceso y Desarrollo de Base de Datos Especiales</label>
+                </form><br>
+                <label>Mensaje:</label><br>
+                <textarea name="descri" required cols="4" id="problema" value="" placeholder="Escribe en este recuadro tu mensaje" maxlength="60" minlength="1"></textarea><br>
+                <button type="submit" onclick="functions()">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        const cboCodigos = document.getElementById('municipio');
+        const ibxDepartamento = document.getElementById('tel');
+
+        cboCodigos.onchange = function() {
+            var cboValue = this.value;
+            ibxDepartamento.value = cboValue;
+        };
+    </script>
+    <script src="restricciones.js"></script>
+</body>
+
+</html>
