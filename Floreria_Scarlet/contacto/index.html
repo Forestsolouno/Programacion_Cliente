@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact V3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+    <style>
+        .navigation-wrapper {
+            position: relative;
+        }
+        
+        @font-face {
+            font-family: MyHelvetica;
+            src: url('fonts/Tangerine_Bold.ttf');
+        }
+        
+        .navigation-button {
+            will-change: transform;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: fixed;
+            z-index: 1;
+            top: 40px;
+            right: 100px;
+            background: transparent;
+            cursor: pointer;
+        }
+        
+        .navigation-button .fa {
+            border: 2px solid white;
+            border-radius: 3px;
+            padding: 10px;
+            color: white;
+        }
+        
+        .navigation-menu ul li {
+            list-style: none;
+            font-family: Poppins-Regular;
+            font-weight: 300;
+            color: hsl(0, 0%, 70%);
+        }
+        
+        .navigation-menu {
+            content: '';
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 50%;
+            background: #fff;
+            height: 100%;
+            transform: skewX(0deg) translate(100%, 0);
+            transform-origin: top right;
+            transition: all .2s ease-in;
+            z-index: 13;
+        }
+        
+        .navigation-menu ul {
+            transform: skewX(-8deg);
+            transform-origin: top left;
+            position: fixed;
+            right: 13%;
+            top: 10%;
+            width: 85%;
+            text-align: right;
+        }
+        
+        .navigation-menu ul li {
+            position: relative;
+            z-index: 999;
+            font-size: 14px;
+            color: hsl(0, 0%, 10%);
+            line-height: 3;
+        }
+        
+        .navigation-menu ul li a {
+            border: none;
+            color: hsl(0, 0%, 10%);
+            text-decoration: none;
+        }
+        
+        .navigation-menu.active {
+            transform: skewX(8deg) translate(0, 0);
+        }
+        
+        .navigation-menu li {
+            opacity: 0;
+            transform: translate(0, 10px);
+            transition: all .0s ease-in .3s;
+        }
+        
+        .navigation-menu.active li {
+            opacity: 1;
+            transform: translate(0, 0);
+            transition: all .2s ease-in 0s;
+        }
+        
+        .navigation-menu.active li:nth-child(1) {
+            transition-delay: .3s;
+        }
+        
+        .navigation-menu.active li:nth-child(2) {
+            transition-delay: .4s;
+        }
+        
+        .navigation-menu.active li:nth-child(3) {
+            transition-delay: .5s;
+        }
+        
+        .navigation-menu.active li:nth-child(4) {
+            transition-delay: .6s;
+        }
+        
+        .navigation-menu.active li:nth-child(5) {
+            transition-delay: .7s;
+        }
+        
+        .navigation-menu.active li:nth-child(6) {
+            transition-delay: .8s;
+        }
+        
+        .navigation-menu.active li:nth-child(7) {
+            transition-delay: .9s;
+        }
+        
+        .navigation-menu.active li:nth-child(8) {
+            transition-delay: 1.0s;
+        }
+        
+        .button {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: normal;
+            font-size: 12px;
+            margin-top: 40px;
+        }
+        
+        #flori {
+            font-family: MyHelvetica;
+            font-size: 65px;
+            -webkit-text-stroke: 1px black;
+            color: red;
+            text-align: center;
+            text-transform: none;
+        }
+        
+        #flor {
+            font-family: MyHelvetica;
+            font-size: 450%;
+            -webkit-text-stroke: 1px black;
+            color: red;
+            text-align: right;
+            line-height: 1.4;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation-wrapper">
+        <div class="navigation-button">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="navigation-menu">
+            <ul>
+                <li>
+                    <a href="/index.html">
+                        <p id="flor">Florería Scarlet</p>
+                    </a>
+                </li>
+                <li><a href="/index.html">Página Principal</a></li>
+                <li><a href="/login/index.html">Ingresar/Registrarse</a></li>
+                <li><a href="">Galería</a></li>
+                <li><a href="">Florpedia</a></li>
+                <li><a href="/contacto/index.html">Contacto</a></li>
+                <li><a href="">Ubicación</a></li>
+                <li><a href="">Sobre Nosotros</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bg-contact3" style="background-image: url('images/paisaje-con-flores.jpg');">
+        <div class="container-contact3">
+            <div class="wrap-contact3">
+                <form class="contact3-form validate-form">
+                    <span class="contact3-form-title">
+						Contactanos <br><p id="flori">Florería Scarlet</p>
+					</span>
+
+                    <div class="wrap-contact3-form-radio">
+                        <div class="contact3-form-radio m-r-42">
+                            <input class="input-radio3" id="radio1" type="radio" name="choice" value="say-hi" checked="checked">
+                            <label class="label-radio3" for="radio1">
+								Mandar <br>mensaje
+							</label>
+                        </div>
+
+                        <div class="contact3-form-radio">
+                            <input class="input-radio3" id="radio2" type="radio" name="choice" value="get-quote">
+                            <label class="label-radio3" for="radio2">
+								Pedir <br>Cotización
+							</label>
+                        </div>
+                    </div>
+
+                    <div class="wrap-input3 validate-input" data-validate="Name is required">
+                        <input class="input3" type="text" name="name" placeholder="Tu Nombre">
+                        <span class="focus-input3"></span>
+                    </div>
+
+                    <div class="wrap-input3 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input class="input3" type="text" name="email" placeholder="Correo Electrónico">
+                        <span class="focus-input3"></span>
+                    </div>
+
+                    <div class="wrap-input3 input3-select">
+                        <div>
+                            <select class="selection-2" name="service">
+								<option>Servicios Necesarios</option>
+								<option>Negocio de comercio electrónico</option>
+								<option>Diseño UX/UI</option>
+								<option>Servicios En Línea</option>
+							</select>
+                        </div>
+                        <span class="focus-input3"></span>
+                    </div>
+
+                    <div class="wrap-input3 input3-select">
+                        <div>
+                            <select class="selection-2" name="budget">
+								<option>Presupuesto</option>
+								<option>1500 $</option>
+								<option>2000 $</option>
+								<option>3000 $</option>
+							</select>
+                        </div>
+                        <span class="focus-input3"></span>
+                    </div>
+
+                    <div class="wrap-input3 validate-input" data-validate="Message is required">
+                        <textarea class="input3" name="message" placeholder="Tu Mensaje"></textarea>
+                        <span class="focus-input3"></span>
+                    </div>
+
+                    <div class="container-contact3-form-btn">
+                        <button class="contact3-form-btn">
+							Enviar
+						</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="dropDownSelect1"></div>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script>
+        $(".selection-2").select2({
+            minimumResultsForSearch: 20,
+            dropdownParent: $('#dropDownSelect1')
+        });
+    </script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script>
+        var navButton = document.querySelector('.navigation-button');
+        var navMenu = document.querySelector('.navigation-menu');
+        var win = window;
+
+        function openMenu(event) {
+
+            navButton.classList.toggle('active');
+            navMenu.classList.toggle('active');
+
+            event.preventDefault();
+            event.stopImmediatePropagation();
+        }
+
+        function closeMenu(event) {
+            if (navButton.classList.contains('active')) {
+                navButton.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        }
+        navButton.addEventListener('click', openMenu, false);
+
+        win.addEventListener('click', closeMenu, false);
+    </script>
+</body>
+
+</html>
